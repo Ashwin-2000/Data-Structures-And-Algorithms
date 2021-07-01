@@ -20,7 +20,7 @@ Important to note during programming :
         -if next is NULL => last
     3.Remember to change the size pointer
 
-
+ It is just for github
 DOUBLY LIINKED LIST PROGRAMMING 
 Basic Operations : 
 
