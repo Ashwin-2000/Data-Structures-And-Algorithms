@@ -13,6 +13,7 @@ Disadvantage :
     -Extra space for two pointers
     |   Alternate : XOR Doubly Linked List
 
+This is also for git hub
 Important to note during programming : 
     1.Careful during changing the value of the pointer and careful at order of changing
     2.Accessing NULL at the basecase
