@@ -1,0 +1,28 @@
+Circular Linked List
+
+Linked List 
+    Merge sort
+    Quick sort
+
+Prob in Linked List
+    LRU cache
+    detect loop
+    delete loop
+    faltten a list
+    palindrome or not
+    clone with random pointers
+    first non repeating stream of char
+
+Prob in Doubly ll
+    **Sort a Ksorted DLL
+    **Rotate DLL in group of given size
+    reverse dll
+    rotate dll by n nodes
+    find the pairs with given sum
+    find triplets with given sum
+
+    More:
+        XOR linked List
+
+Prob in circular ll:
+    check is it circular

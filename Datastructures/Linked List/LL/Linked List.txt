@@ -1,0 +1,87 @@
+
+LINKED LIST : 
+        -not contagious memory allocation
+        -need no to know about the size
+
+        ACCESS    O(n)
+        INSERTION O(1)
+        DELETION  O(1)
+        VARIATIONS : 
+                -Doubly Linked list
+                -Circular Linked List
+        Merge Sort is prefered over Quick sort why ?
+                *Quick sort requires random access...like finding the Pivot element..In linked list random access is not possible
+                *Inserting in Linked list is O(1) whereas in array is O(n)
+
+Advantage over array : 
+        1.size is not fixed
+        2.Inserting and Deleting elements does not moves the remainng elements
+
+Disadvantage of Linked list : 
+        1.Radom access is not allowed
+        2.Extra space for pointer
+        3.Not cache friendly
+
+Node for Linked List 
+        struct Node {
+                int data;
+                Node* next; 
+        }
+
+NOTE : 
+        The important order to be followed during LinkedList Porgramming is 
+                step 1 : Establish the connection
+                step 2 : Remove the connection
+        Keep an eye always on Head node
+
+
+
+LINKED LIST PROGRAMMING 
+Basic Operations : 
+
+****-Insertion
+        at Begining
+        at ith index
+        after value
+        at End
+
+****-Deletion
+        at Begining
+        at ith index
+        delete the value
+        at the end
+        delete the node passed is parameter
+
+****-Searching
+        linear Searching
+        Tortoise and Hare Method
+            -finding the middle element [ hare is 2times faster]
+            -detecting and removing loop
+        Slow and Fast pointer
+            -finding kth element from back
+            -spliting the linked list
+
+****-Reversing
+        reversing using iteration
+        reversing using recurrsion
+        reverse and merge at kth index
+
+****-Sorting
+        merge Sort
+        quick sort
+    
+    -Intersection
+        intersection point of two linked list
+        intersection of two sorted linked list
+
+    -Rotate     
+        by n nodes
+        
+    -Loop
+        detect Loop
+        find start of loop
+        detect and remove Loop
+
+
+
+

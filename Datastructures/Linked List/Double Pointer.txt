@@ -1,0 +1,26 @@
+POINTERS
+    Pointer store address of the variable
+    Size of pointer is fixed and depends on system..In 32bit machine pointer size is 32bit.
+    Saves space
+
+
+
+DOUBLE POINTER
+Pointer to the pointer
+Node** temp;
+
+Double pointer can access to two locations:
+1.Pointer           - temp
+2.Value at pointer  - *temp
+
+For Example:
+    Node** temp = &head;
+        Using variable "temp"  I can move the head pointer
+        Using variabel "*temp" I can change the value of head pointer
+
+temp  is like current pointer
+temp* is like next pointer
+
+Using Double pointer I can access the next element from the Previous element
+
+Using Double pointer we can avoid the use of special if condition for the head during insertion and deletion

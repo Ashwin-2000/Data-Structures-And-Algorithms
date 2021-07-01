@@ -1,0 +1,124 @@
+DOUBLY LINKED LIST : 
+    Uses two pointer 
+        -prev if prev==NULL then it is HEAD
+        -next if next==NULL then it is TAIL
+    We can travese in both direction - Froward & backward
+
+Advantage over Linked List  :
+    -backward traversal
+    -Reduced Time complexity on other operations
+    -Reversing DLL is O(1) : Just change the position of head to last
+
+Disadvantage : 
+    -Extra space for two pointers
+    |   Alternate : XOR Doubly Linked List
+
+Important to note during programming : 
+    1.Careful during changing the value of the pointer and careful at order of changing
+    2.Accessing NULL at the basecase
+        -if prev is NULL => head
+        -if next is NULL => last
+    3.Remember to change the size pointer
+
+
+DOUBLY LIINKED LIST PROGRAMMING 
+Basic Operations : 
+
+****-Insertion
+        at Begining
+        at ith index
+        after value
+        at End
+
+****-Deletion
+        at Begining
+        at ith index
+        delete the value
+        at the end
+        delete the node passed is parameter
+
+****-Searching
+        linear Searching
+        Can search in both direction
+
+****-Sorting
+        sorting K-sorted DLL
+    
+    Rotate
+        by n nodes
+
+    find the pairs with given sum
+    find the triplets with given sum
+See XOR Double Linked List
+
+Important to notice Edge Cases :
+
+Idiot use only one head pointer
+
+    INSERTION : 
+    Try to write a common method for inserting at both head and tail
+        Inserting at head :
+            List is empty => head = tail
+            List is not empty
+        
+        Inserting at tail :
+            List is empty => head = tail
+            List is not empty
+
+    Try to generalize both below
+        Inserting at index (Inserting Before) :
+            For first index call insert first
+            For last+1 i.e size call insert at tail
+            Else insert at pos
+            |   last index will work fine because we are inserting
+            |   before the last.Therefore tail will not change
+
+        Inserting after idx :
+            Dont need to worry about the head idx
+            Make sure to change the tail pointer if given index is the last index
+            |   Because inserting after 0,we dont need to change the head
+            |   But on inserting after tail we need to move the tail
+    DELETION : 
+
+        Try to write a common program for both below
+            Deleteing the head :
+                After deleting the list is empty    => tail = NULL
+                After deleting the list is not empty
+
+            Deleting the tail :
+                After deleting the list is empty    => head = NULL
+                After deleting the list is not empty
+
+        Deleting at the index :
+            Deleting the head [idx = 0]=>           call delete head
+            Deleting the tail [idx = (***size-1)]   call delete tail
+            Else locate and delete the node at idx
+        
+        Deleting the val including dupilcates
+            Run till temp is NULL
+            if node with key is found : 
+                //Head part
+                if the node is head i.e node->prev == NULL
+                    move the Head
+                if the node node is not head
+                    prevnode->next is node->next
+                //Tail part
+                if the node is tail i.e node->next == NULL
+                    move the tail
+                if node is not tail
+                    nextnode->prev = node->prev
+
+
+PROBLEMS : 
+    Sort the k sorted DLL
+    rotate DLL by n nodes
+    Rotate DLL in group of given size
+    Reverse DLL O(1)
+    Find pairs with given sum
+    Find triplate with given sum
+
+EXTRA : 
+    XOR doubly Linked List
+
+    
+

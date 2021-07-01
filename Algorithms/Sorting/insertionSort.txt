@@ -1,0 +1,21 @@
+INSERTION SORT
+    -Simplest sort   
+    -Stable sorting algo
+    -O(n^2)
+
+In insertion sort, at ith element we already sorted the elements to the left of the array,
+we need to find the place for the current element in the previously sorted left side of array
+__________________________________________________________
+|Sorted left side | Current element |  Unsorted rightside |
+`````````````````````````|```````````````````````````````````
+        <----------------|
+
+
+Algorithm:
+
+    Traverse to the end of the loop:
+        key = curr element
+
+        Traverse to the left side of sorted array && check arr[j-1]>key
+            if so move the arr[j-1] to the arr[j]
+        arr[j]=key
