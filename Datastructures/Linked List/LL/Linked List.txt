@@ -64,6 +64,7 @@ Basic Operations :
 ****-Reversing
         reversing using iteration
         reversing using recurrsion
+        |       reverse using stack
         reverse and merge at kth index
 
 ****-Sorting

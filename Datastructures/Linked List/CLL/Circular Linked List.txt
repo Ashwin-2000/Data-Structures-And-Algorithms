@@ -1,0 +1,43 @@
+CIRCULAR LINKED LIST
+    -Last Node points to the Head
+    -So we can travel to any node from anywhere in circural singly linked list
+    
+    Variations in directions : 
+        Clockwise       : prev pointer => head -> last
+        AntiClockwise   : next pointer => last -> head
+    
+    Variations in connection : 
+        Singly Circular Linked List
+            Clockwise
+            AntiClockwise
+        Doubly Circular Linked List
+            Both Clockwise & AntiClockwise
+    
+
+Advantages : 
+    Travel from any node to any node
+    Easy implementation of Queue
+    |   we can maintain with one pointer rather than using front and rather
+    Used in Round Robin Allocation
+    Cirucal DLL is used in fibonocii heap
+
+Important to note in Programming : 
+    1.Links are generally AntiClockwise i.e Last -> head
+    2.Base cases might be :
+        Empty list  
+        Only One Node
+        Morethan one node
+    3.Use do..while loop to iterate
+
+
+BASIC OPERATIONS : 
+    Insertion
+        Insert Node
+        |   Inserting in begining and end is same we need to move either one of the head or tail pointer
+        |   Generally append the node in the list i.e add at the end
+        Insert After
+
+    Deletion
+        Delete at Begining
+        Delete at End
+        Delete val

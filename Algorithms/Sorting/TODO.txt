@@ -1,0 +1,16 @@
+ON ARRAY : 
+insertion sort
+selection sort 
+quick sort
+merge sort
+heap sort
+sort a k-away sorted array
+
+ON LINKED LIST : 
+merge sort
+quick sort
+
+ON DOUBLY LINKED LIST : 
+sort a k-away sorted dll
+
+

@@ -1,0 +1,15 @@
+STACK IN STL Library : 
+
+Underneath stack can be implements using : 
+    vector
+    dequeue
+    list
+We can specify the container 
+By default stack in STL uses "dequeue"
+
+size()      size of the stack
+top()       access top element
+empty()     empty means true else false 
+push()      insert at the top
+pop()       remove top element
+swap()      swapping two arrays

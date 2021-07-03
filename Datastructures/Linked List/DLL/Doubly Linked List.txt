@@ -109,9 +109,9 @@ Idiot use only one head pointer
 
 
 PROBLEMS : 
-    Sort the k sorted DLL
+****Sort the k sorted DLL
     rotate DLL by n nodes
-    Rotate DLL in group of given size
+****Rotate DLL in group of given size
     Reverse DLL O(1)
     Find pairs with given sum
     Find triplate with given sum

@@ -1,0 +1,26 @@
+QUEUE
+    FIFO - First In First Out Strategy
+    Two Pointer - FRONT & REAR (generally)
+    IMPLEMENTATION
+        1.Array
+        2.Singly Linked List
+        3.Circular Linked List
+        |   Using Circular linked list we can use implement the queue using single Pointer
+    APPLICATION
+        Ready Queue in OS
+        Waiting Queue
+        Queueing theory
+    VARIATIONS :
+        1.Queue
+        |   add on BACK remove on FRONT
+        2.DEqueue Double Ended Queue
+        |   add on both FRONT and BACK
+
+    Problem Solving : 
+        
+BASIC OPERATIONS : 
+    Enqueue
+    Dequeue
+    Front
+    Rear
+    

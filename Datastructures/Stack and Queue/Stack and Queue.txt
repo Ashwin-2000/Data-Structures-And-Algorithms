@@ -1,0 +1,7 @@
+STACK AND QUEUE
+    These are called as auxillary data types
+    |   They expose specific functionality of linked list not all
+    They have wide range of applications in Operating Sysytems
+    
+
+

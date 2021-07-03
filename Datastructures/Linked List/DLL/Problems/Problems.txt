@@ -1,0 +1,6 @@
+Reverse DLL
+Reveres DLL by parts
+
+Rotate DLL by n nodes
+
+Sorting k sorted DLL

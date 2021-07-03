@@ -1,0 +1,5 @@
+
+Application of Hash table : 
+    1.Finding the duplicates in o(n) in any data structures
+    2.Finding pairwise and triplets of sum or difference
+    

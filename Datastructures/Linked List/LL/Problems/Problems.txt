@@ -1,0 +1,26 @@
+Reverse using iteration
+Reverse using recursion
+
+Merge sort
+
+Detect the loop
+Remove the loop
+
+LRU cache
+
+Palindrome or not :
+    recursion
+    iteration
+    reverse the other half
+
+Remove Duplicates :
+    NOTE : Best way to remove duplicate in any Data structure is using Hash table
+            If hash table is not used,then we need to sort it..there is no other efficient way
+
+Middle of linked list
+Median of two sorted list
+
+Flatten a Linked list
+Clone a Linked list using Random Pointers
+
+Other problems in Excel

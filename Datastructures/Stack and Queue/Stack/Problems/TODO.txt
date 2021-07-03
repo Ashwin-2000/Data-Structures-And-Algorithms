@@ -1,0 +1,8 @@
+Problems to do :
+    Get min at pop
+    Stock Span Problem
+    Next greater element in array
+    The celebrity problem
+    Area of Histogram
+    Max of min in windows
+    

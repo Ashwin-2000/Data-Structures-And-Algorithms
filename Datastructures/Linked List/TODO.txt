@@ -1,3 +1,4 @@
+
 Circular Linked List
 
 Linked List 
@@ -15,9 +16,6 @@ Prob in Linked List
 
 Prob in Doubly ll
     **Sort a Ksorted DLL
-    **Rotate DLL in group of given size
-    reverse dll
-    rotate dll by n nodes
     find the pairs with given sum
     find triplets with given sum
 
