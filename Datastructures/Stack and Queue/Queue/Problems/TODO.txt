@@ -1,0 +1,5 @@
+Problems in Queue
+    1.Stack using two queues
+    2.Maximum of all sunarrays of size k
+    3.Generate Binar Numbers
+    4.Reverse first K elements of Queue

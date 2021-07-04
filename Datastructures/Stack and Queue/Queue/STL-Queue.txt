@@ -1,0 +1,32 @@
+QUEUE IN STL LIBRARY
+    Stack and Queue in STL is mostly implement dequeue[Double ended Queue] container by default
+
+DEQUE Methods in STL -
+    Is is similar to Vectors but vectors store all elements in contagious memory allovcation where dequeue has
+    non contagious memory allocation
+
+    deque<int> dq;
+
+    dq.push_back();
+    dq.push_front();
+    dq.pop_front();
+    dq.pop_back();
+    
+    dq.insert( iterator position , value);
+    dq.insert( iterator position , size to fill , value to fill)
+    dq.insert( iterator position , another_dq_itr_position_start , another_dq_itr_position_end)
+
+    dq.size();
+    dq.at();
+    dq.front();
+    dq.back();
+
+
+QUEUE Methods in STL - 
+    size()
+    empty()
+    front()
+    back()
+    push()
+    pop()
+    swap()

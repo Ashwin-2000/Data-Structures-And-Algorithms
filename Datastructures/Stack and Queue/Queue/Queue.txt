@@ -6,6 +6,7 @@ QUEUE
         2.Singly Linked List
         3.Circular Linked List
         |   Using Circular linked list we can use implement the queue using single Pointer
+        |   It is the efficient way because it takes O(1) on both enqeue and dequeue
     APPLICATION
         Ready Queue in OS
         Waiting Queue
@@ -15,9 +16,25 @@ QUEUE
         |   add on BACK remove on FRONT
         2.DEqueue Double Ended Queue
         |   add on both FRONT and BACK
+        3.Prioity Queue
+        |   Array of Front pointers having indexed prioity wise
 
     Problem Solving : 
+
+Important Points to remember on Implementation:
+In the programs the pointers point to the elements not the next to be places. Eg : Top pointer points the element at the top not the place where next elemt to be inserted
+    Array :
+        We can make front & rear points to the first and last node
+        We shift the elements to the left on dequeue and decrement the rear 
+    Circular Linked list : 
+        CLL is efficent to implement because 
+            In LL to insert at back we need to travel to the last - O(N)
+            In LL to delete the node at the front i takes         - O(1)
+            In CLL one pointer implementation - last pointer , 
+                Insert at the back  (i.e) last                    - O(1)
+                Delete at the front (i.e) last->next              - O(1)
         
+
 BASIC OPERATIONS : 
     Enqueue
     Dequeue
