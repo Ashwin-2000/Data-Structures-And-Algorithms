@@ -30,9 +30,15 @@ Data Structures types :
 Linear Data Structures :
 
 1. Array
+<<<<<<< HEAD
 2. [Linked List](./Linked%20List/README.md)
 3. Stack
 4. Queue
+=======
+2. [Linked List](./Linked%20List)
+3. [Stack](./Stack%20and%20Queue/Stack)
+4. [Queue](./Stack%20and%20Queue/Queue)
+>>>>>>> c5fd8dbc517a6e3f87784531cdab6d4995dd5298
 
 Non Linerar Data Structures :
 
