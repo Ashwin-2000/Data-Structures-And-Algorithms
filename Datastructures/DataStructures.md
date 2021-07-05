@@ -30,7 +30,7 @@ Data Structures types :
 Linear Data Structures :
 
 1. Array
-2. [Linked List]("/Linked List/")
+2. [Linked List](/Datastructures/Linked List/README.md)
 3. Stack
 4. Queue
 
