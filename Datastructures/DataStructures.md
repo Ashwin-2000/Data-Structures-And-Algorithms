@@ -30,7 +30,7 @@ Data Structures types :
 Linear Data Structures :
 
 1. Array
-2. Linked List
+2. [Linked List](./Linked List/)
 3. Stack
 4. Queue
 
