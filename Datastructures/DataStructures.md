@@ -30,7 +30,7 @@ Data Structures types :
 Linear Data Structures :
 
 1. Array
-2. [Linked List](https://github.com/Ashwin-2000/Data-Structures-And-Algorithms/tree/master/Datastructures/Linked%20List)
+2. [Linked List](/Data-Structures-And-Algorithms/tree/master/Datastructures/Linked%20List)
 3. Stack
 4. Queue
 
