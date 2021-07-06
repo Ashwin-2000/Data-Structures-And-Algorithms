@@ -79,3 +79,6 @@ Important to notice in Stack implementation :
 1. To change the recursion to iteration
 2. To find the ans in reverse order
 3. If you want to use the lastly used element
+4. Backtracking
+5. DFS
+6. Converting decimal to binary

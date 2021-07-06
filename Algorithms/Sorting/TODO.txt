@@ -1,5 +1,5 @@
 ON ARRAY : 
-insertion sort
+insertion sort - binary insertioon
 selection sort 
 quick sort
 merge sort
