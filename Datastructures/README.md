@@ -29,31 +29,20 @@ Data Structures types :
 
 Linear Data Structures :
 
-1. Array
+1. [Array](./Array)
 2. [Linked List](./Linked%20List)
-3. [Stack](./Stack%20and%20Queue/Stack)
-4. [Queue](./Stack%20and%20Queue/Queue)
 
-Non Linerar Data Structures :
+   Auxillary Data Structures : Linear but important data structure implemented using either Array or Linked List
 
-1. Trees
-   - N-ary Tree
-   - Binary Tree
-   - Binary Search Tree
-   - Heap/Priority Queue/Binary HEap
-   - Balanced Search Trees (General concepts not details)
-   - Traversals : Preorder,Inorder,Postroder,BFS,DFS
-2. Hash table
-3. Graph
+   - [Stack](./Stack%20and%20Queue/Stack)
+   - [Queue](./Stack%20and%20Queue/Queue)
 
-- Directed
-- Undirected
-- Adjacency Matrix and Adjacency List
-- Traversel : BFS , DFS
+Non Linear Data Structures :
 
-Don't get too exhaustive on seeing this...the topics that are marked are not implemented but you should know about it. Most of the interviews dont expect students to implement these marked topic but they think the students must be aware of it.
+1. [Trees](./Trees)
+2. [Graphs](./Graphs)
 
-The Most funniest thing of all is each data structure is used to represent other.For example,the Graph can be implemented using Matrix(Array of Array) and also using Adjacency List(Vector of Vector).
+We use one Data strucute to represent other.For example,the Graph can be implemented using Matrix(Array of Array) and also using Adjacency List(Vector of Vector).
 
 ---
 
