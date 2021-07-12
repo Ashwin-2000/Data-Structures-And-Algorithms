@@ -31,7 +31,7 @@ Why Trees ?
   - height - height of Node : No. of edges on the _longest path from node to leaf._ - height of Tree : No. of edges on the _longest path from root to leaf._
   - depth - The number of edges from node to root node.[It is node property].Depth at root node is 0
   - level - Nodes at same depth are level.level = depth + 1
-
+  - diameter - longest path between two leaf nodes
 _NOTE : Please view the below tree in fullscreen mode_
 
   <pre>

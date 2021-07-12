@@ -179,6 +179,8 @@ Array Representation = { [A] , [B] , [C] , [D] , [E] , [F] , Null }
 - Binary Heap
 - Balanced Binary Trees
 
+[Catalan Number](https://www.geeksforgeeks.org/enumeration-of-binary-trees/) 
+
 Before going into Binary tree basic operations we need to know two more important topics.
 
 - [Tree Traversal](../Tree%20traversal/README.md)
@@ -187,3 +189,4 @@ Before going into Binary tree basic operations we need to know two more importan
 After completing those two topics we can join Binary tree.
 
 Lets Dive into Tree Traversal - [NEXT PAGE](../Tree%20traversal/README.md)
+
