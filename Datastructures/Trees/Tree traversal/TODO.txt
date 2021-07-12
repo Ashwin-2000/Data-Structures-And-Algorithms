@@ -1,0 +1,2 @@
+1. Inorder ,Preorder, Postorder all three in single stack
+2. Threaded binary tree 
