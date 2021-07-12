@@ -35,7 +35,7 @@ void merger(int arr[] , int l , int mid , int h){
 
 }
 
-void mergeSortrecurr( int arr[] , int l , int h ){
+void mergeSort( int arr[] , int l , int h ){
     if( l >= h)
         return;
     
@@ -50,11 +50,7 @@ void mergeSortrecurr( int arr[] , int l , int h ){
 
 }
 
-void mergeSortiter(int arr[] , int l , int h){
 
-    int m = l + (r-l)/2;
-
-}
 
 int main() {
     int arr[] = { 6 , 5 , 4 , 9  ,8 , 2 , 1};

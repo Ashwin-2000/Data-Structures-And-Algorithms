@@ -2,11 +2,18 @@
 
 using namespace std;
 
+/*
+    In selection sort,we sort the previous elements to the current index and we dont need to change it.
+    But since , the element are swapping over large diatance "SELECTION SORT" is not stable.
+*/
+
 void selectionSort(int *arr , int N){
    cout<<sizeof(int)<<" "<<sizeof(arr)<<endl;
     for(int i=0;i<N;i++){
         int idx = i;
         int min = arr[i];
+
+        //Finding the ith min element in the sub array [ i to N-1 ]
         for(int j=i;j<N;j++){
             if(arr[j] < min)
                { 
@@ -14,6 +21,8 @@ void selectionSort(int *arr , int N){
                    min=arr[j];
                }
         }
+
+        //Place the ith min element in ith place
         arr[idx] = arr[i];
         arr[i] = min;
     }
