@@ -1,7 +1,8 @@
 #include<iostream>
 #include<queue>
 #include<stack>
-#include<unordered_map>
+#include<vector>
+#include<map>
 
 using namespace std;
 
@@ -67,6 +68,73 @@ void reverseLevelOrderTraversal (Node *root ){
 
 }
 
+
+/* 
+     A  B   C   D  E   F
+     |  |   |   |  |   | 
+     |  |   1   |  |   |
+     |  | / |  \|  |   |
+     |  2   |   3  |   |
+     | /|\  |  /|\ |   |
+     4  |  5|6  |  7   |
+     |  |   |   | /| \ |
+     |  |   |   8  |   9 
+     |  |   |   |  |   |
+    -2 -1   0   1   2   3  -> horizontal distance
+              
+The vertical order traversal will be like:
+A : 4
+B : 2
+C : 1 5 6
+D : 3 8
+E : 7
+F : 9
+
+We can implement vertical order by keeping track of horizontal distance
+*/
+void verticalOrderUtility(Node *root , int level , map< int , vector<int> > &hash);
+
+
+void verticalOrderTraversal( Node *head){
+    if(head == NULL)
+        return;
+    
+    //We Hash the horizontal distance from root with node
+    map <int , vector<int> > hash;
+    verticalOrderUtility( head , 0 , hash);
+
+    map< int , vector<int> > :: iterator itr;
+    for( itr = hash.begin() ; itr != hash.end() ; itr++){
+        cout<< itr->first << " : ";
+        for(int data : itr->second)
+            cout<< data <<" ";
+        cout<<endl;
+    }
+
+}
+
+void verticalOrderUtility(Node *root , int horizontalDistance , map< int , vector<int> > &hash){
+    if(root==NULL)
+        return;
+    
+    if(hash.find( horizontalDistance ) == hash.end() ){
+        vector<int> vec{ root->data };
+        hash.insert ( make_pair ( horizontalDistance , vec ));
+    }
+    else {
+        map< int , vector<int> > :: iterator itr;
+        itr = hash.find(horizontalDistance);
+        itr->second.push_back(root->data);
+    }
+
+    //We decrease the horizontal distance by one as we go to left of root
+    verticalOrderUtility(root->left , horizontalDistance-1 , hash);
+
+    //We increase the forizontal distance by one as we go to right of root
+    verticalOrderUtility(root->right , horizontalDistance+1 , hash);
+
+}
+
 //DFS can be modified to find the height of the tree
 int heightOftree(Node *root){
     //If there is 0 node in tree return
@@ -121,97 +189,6 @@ int diameterofTree(Node *root){
    
 }
 
-/*
-    If it is balanced tree the answer is simple, 
-        use stack and traverse to the left sub tree until NULL - you would get the Left side of the top view
-        use stack and traverse to the right sub tree until NULL - reverse the stack and you will get the left side.
-
-    But the above solution will not work for Unbalanced tree : 
-
-        1
-      /   \
-    2       3
-      \   
-        4  
-          \
-            5
-             \
-               6
-    In this tree the TOP VIEW : 2 1 3 6 .
-    So we need to traverse vertically.
-
-*/
-
-void topViewOftree(Node *root){
-    if(root == NULL)
-        return NULL;
-    
-    
-}
-/*
-    LEFT VIEW is nothing but first node in each level
-*/
-void leftViewOfTree(Node *root){
-    if(root==NULL)
-        return;
-    
-    queue<Node *> q;
-
-    q.push(root);
-
-    while(!q.empty()){
-        //We calculate the number of nodes at each level
-        int n = q.size();
-
-        for(int i=0;i<n;i++){
-            Node *curr = q.front();
-            q.pop();
-            //If the curr node is first node in current level , then we print it
-            if(i==0)
-                cout<<curr->data<<" ";
-            
-            if(curr->left) q.push(curr->left);
-            if(curr->right) q.push(curr->right);
-        }
-    }
-    cout<<endl;
-}
-
-// RIGHT VIEW : Last nodes at each level form the right end of the tree
-void rightViewOfTree(Node *root){
-    if(root==NULL)
-        return;
-    
-    queue<Node *> q;
-    q.push(root);
-
-    while(!q.empty()){
-        int n = q.size();
-        for(int i=0; i<n; i++){
-            Node *curr = q.front();
-            q.pop();
-            //If the curr node is the last node in the level then it is print it.
-            if(i==n-1)
-                cout<<curr->data<<" ";
-            
-            if(curr->left) q.push(curr->left);
-            if(curr->right) q.push(curr->right);
-        }
-        cout<<endl;
-    }
-}
-
-/*
-The Binary tree is : 
-        10
-     /      \
-    20       30
-  /   \     /  \
- 40   50   60   70
-                 \
-                 80
-
-*/
 int main(){
     Node *head = new Node(10);
     head->left = new Node(20);
@@ -225,15 +202,12 @@ int main(){
     levelOrderTraversal(head);
     cout<<"Reverse Level Order Traversal : ";
     reverseLevelOrderTraversal(head);
+    cout<<"Vertical Order Traversal of the tree : "<<endl;
+    verticalOrderTraversal(head);
     cout<<"Height of the tree : ";
     cout<<heightOftree(head)<<endl;
     cout<<"Diameter of the tree : ";
     cout<<diameterofTree(head)<<endl;
-    cout<<"Top view of the tree : ";
-    // topViewOfTree(head);
-    cout<<"Left view of the tree : ";
-    leftViewOfTree(head);
-    cout<<"Right view of the tree : ";
-    rightViewOfTree(head);
+
 
 }
